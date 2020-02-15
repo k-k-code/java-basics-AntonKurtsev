@@ -32,11 +32,11 @@ public class Main {
          Выберите подходящий тип переменных, в которые будут сохраняться значения.
          Не забудьте, что метод, вычисляющий значение переменной должен возвращать тот же тип.
         */
-        /*тип*/ minValue = findMinValue(oneDimensionArray);
-        /*тип*/ maxValue = findMaxValue(oneDimensionArray);
-        /*тип*/ sumOfValues = sumValues(oneDimensionArray);
-        /*тип*/ firstPositiveIndex = getFirstPositiveIndex(oneDimensionArray);
-        /*тип*/ firstNegativeIndex = getFirstNegativeIndex(oneDimensionArray);
+        /*тип*/ int minValue = findMinValue(oneDimensionArray);
+        /*тип*/ int maxValue = findMaxValue(oneDimensionArray);
+        /*тип*/ int sumOfValues = sumValues(oneDimensionArray);
+        /*тип*/ int firstPositiveIndex = getFirstPositiveIndex(oneDimensionArray);
+        /*тип*/ int firstNegativeIndex = getFirstNegativeIndex(oneDimensionArray);
 
 
         System.out.println("First part");
@@ -57,9 +57,9 @@ public class Main {
          Выберите подходящий тип переменных, в которые будут сохраняться значения.
          Не забудьте, что метод должен возвращать значение тогот же типа.
         */
-        /*тип*/ lastPositiveIndex = getLastPositiveIndex(oneDimensionArray);
-        /*тип*/ lastNegativeIndex = getLastNegativeIndex(oneDimensionArray);
-        byte[] positiveNegativeNumber = countPositiveNegative(oneDimensionArray);
+        /*тип*/ byte lastPositiveIndex = getLastPositiveIndex(oneDimensionArray);
+        /*тип*/ byte lastNegativeIndex = getLastNegativeIndex(oneDimensionArray);
+                byte[] positiveNegativeNumber = countPositiveNegative(oneDimensionArray);
 
         System.out.println("last positive index: " + lastPositiveIndex);
         System.out.println("last negative index: " + lastNegativeIndex);
@@ -84,19 +84,20 @@ public class Main {
     }
 
     /* Укажите тип значения, которое будет возвращать метод*/
-    private static /*тип*/ findMinValue(int[] arrayOfValues) {
+    private static /*тип*/ int findMinValue(int[] arrayOfValues) {
         /* Укажите тип переменной */
-        /*тип*/ minValue = arrayOfValues[0];
+        /*тип*/ int minValue = arrayOfValues[0];
         /*
            Используя цикл for переберите все значения массива и сохраните минимальное в переменную minValue.
          */
+            for (int minValue : arrayOfValues)
         return minValue;
     }
 
     /* Укажите тип значения, которое будет возвращать метод*/
-    private static /*тип*/ findMaxValue(int[] arrayOfValues) {
+    private static /*тип*/ int findMaxValue(int[] arrayOfValues) {
         /* Укажите тип переменной */
-        /*тип*/ maxValue = arrayOfValues[0];
+        /*тип*/ int maxValue = arrayOfValues[0];
         /*
            Используя цикл for переберите все значения массива и сохраните максимальное в переменную maxValue.
          */
